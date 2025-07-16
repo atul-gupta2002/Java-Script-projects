@@ -18,7 +18,6 @@ A simple and modern **QR Code Generator** built using **HTML**, **CSS**, and **J
 ```
 ├── index.html
 ├── style.css
-├── script.js
 └── README.md
 ```
 
