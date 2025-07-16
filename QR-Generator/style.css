@@ -1,3 +1,4 @@
+
 /** {*/
 /*    margin: 0;*/
 /*    padding: 0;*/
@@ -109,6 +110,7 @@
 body {
     background: linear-gradient(135deg, #74ebd5, #ACB6E5);
     min-height: 100vh;
+    transition: background 0.5s, color 0.5s;
 }
 
 .container {
@@ -121,6 +123,7 @@ body {
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transition: background 0.5s, color 0.5s;
 }
 
 .container p {
@@ -156,7 +159,7 @@ body {
     box-shadow: 0 10px 20px rgba(73, 78, 234, 0.3);
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .container button:hover {
@@ -198,4 +201,66 @@ body {
     50% { transform: translateX(3px); }
     75% { transform: translateX(-3px); }
     100% { transform: translateX(0); }
+}
+
+ Dark Mode Styling
+body.dark {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: #f1f1f1;
+}
+
+body.dark .container {
+    background: #1f1f1f;
+    color: #f1f1f1;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .container input {
+    background: #2c2c2c;
+    color: #f1f1f1;
+    border: 1px solid #7b5fff;
+}
+
+body.dark .container button {
+    background: #7b5fff;
+    box-shadow: 0 10px 20px rgba(123, 95, 255, 0.4);
+}
+
+body.dark .container button:hover {
+    background: #9b23ea;
+    box-shadow: 0 12px 24px rgba(155, 35, 234, 0.5);
+}
+
+#darkToggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #494eea;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(73, 78, 234, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#darkToggle:hover {
+    background: #3b3eea;
+    transform: scale(1.1);
+}
+
+/* Optional - in dark mode */
+body.dark #darkToggle {
+    background: #7b5fff;
+}
+
+body.dark #darkToggle:hover {
+    background: #9b23ea;
 }
