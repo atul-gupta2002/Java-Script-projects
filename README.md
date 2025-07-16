@@ -10,7 +10,10 @@ A simple and modern **QR Code Generator** built using **HTML**, **CSS**, and **J
 
 * ✅ Clean and modern UI with gradient background
 * ✅ Smooth animations for QR code generation
-* ✅ Easy-to-use interface
+* ✅ Easy-to-use interface 
+* ✅ Download QR code option
+* ✅ Copy QR code to clipboard
+* ✅ Dark mode support
 
 
 ## 📂 Project Structure
@@ -47,11 +50,6 @@ cd qr-code-generator
 * CSS3 (with modern gradients and animations)
 * Vanilla JavaScript (no libraries)
 
-## 💡 Future Improvements
-
-* ✅ Download QR code option
-* ✅ Copy QR code to clipboard
-* ✅ Dark mode support
 
 ## 🤝 Contributing
 
